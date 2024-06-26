@@ -1,0 +1,71 @@
+body {
+    font-family: 'Armstrong', sans-serif;
+}
+
+#chart {
+    margin: 40px;
+}
+
+.bar {
+    transition: all 0.6s ease;
+}
+
+.bar:hover {
+    opacity: 0.7;
+}
+
+.axis text {
+    font-size: 12px;
+    fill: url(#gradient);
+}
+
+.axis line,
+.axis path {
+    fill: none;
+    shape-rendering: crispEdges;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+
+.text-inside-bar {
+    fill: white;
+    font-family: 'Steelfish', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+.team-logo {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+@keyframes flyIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.image-fly-in {
+    animation: flyIn 1s ease-out;
+}
+
+.kills {
+    fill: url(#kills-gradient);
+}
+
+.damage {
+    fill: url(#damage-gradient);
+}
+
+.bar-title {
+    text-anchor: middle;
+    font-size: 24px;
+    font-weight: bold;
+}
